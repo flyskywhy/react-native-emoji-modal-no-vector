@@ -4,22 +4,22 @@
   "description": "Emoji picker for React Native",
   "author": "Andre 'Staltz' Medeiros <contact@staltz.com>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
   "files": [
     "emoji.json",
-    "index.js",
-    "index.d.ts",
-    "index.js.map"
+    "Icon.js",
+    "index.ts"
   ],
   "dependencies": {
     "just-group-by": "2.1.2",
-    "just-map-values": "3.1.1",
+    "just-map-values": "3.1.1"
+  },
+  "peerDependencies": {
     "react": ">=17.0.0",
     "react-native": ">=0.64.0",
-    "react-native-vector-icons": "^9.0.0"
+    "react-native-svg": ">=12.1.0"
   },
   "devDependencies": {
-    "@types/react-native-vector-icons": "^6.4.10",
     "@types/react-native": "^0.66.4",
     "@types/react": "^17.0.35",
     "emoji-datasource": "7.0.2",
@@ -29,6 +29,6 @@
   },
   "scripts": {
     "prepublishOnly": "npm run compile",
-    "compile": "node scripts/fetch && tsc"
+    "compile": "node scripts/fetch"
   }
 }

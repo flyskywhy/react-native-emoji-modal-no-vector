@@ -11,7 +11,7 @@ import {
   FlatList,
   TextInput,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from './Icon.js';
 const groupBy = require('just-group-by/index.js');
 const mapValues = require('just-map-values/index.js');
 const noop = () => {};
