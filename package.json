@@ -1,6 +1,6 @@
 {
   "name": "react-native-emoji-modal-no-vector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Emoji picker for React Native, without react-native-vector-icons",
   "author": "Andre 'Staltz' Medeiros <contact@staltz.com>",
   "license": "MIT",
@@ -10,6 +10,14 @@
     "Icon.js",
     "index.ts"
   ],
+  "homepage": "https://github.com/flyskywhy/react-native-emoji-modal-no-vector#readme",
+  "bugs": {
+    "url": "https://github.com/flyskywhy/react-native-emoji-modal-no-vector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flyskywhy/react-native-emoji-modal-no-vector.git"
+  },
   "dependencies": {
     "just-group-by": "2.1.2",
     "just-map-values": "3.1.1"
