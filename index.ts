@@ -199,12 +199,14 @@ class EmojiGroup extends PureComponent<{
     const style = {
       width: size,
       height: size,
-      boxSizing: 'content-box',
       fontSize: size * 0.8,
       textAlign: 'center' as const,
       lineHeight: size,
       margin: PADDING,
     } as TextStyle;
+    if (Platform.OS === 'web') {
+      style.boxSizing = 'content-box';
+    }
     const cols = this.props.columns ?? 7;
     const maxWidth = (size + PADDING * 2) * cols + 2;
     const minWidth = maxWidth;
