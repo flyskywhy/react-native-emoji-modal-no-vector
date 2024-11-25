@@ -1,8 +1,15 @@
-# react-native-emoji-modal
+# react-native-emoji-modal-no-vector
+
+[![npm version](http://img.shields.io/npm/v/react-native-emoji-modal-no-vector.svg?style=flat-square)](https://npmjs.org/package/react-native-emoji-modal-no-vector "View this project on npm")
+[![npm downloads](http://img.shields.io/npm/dm/react-native-emoji-modal-no-vector.svg?style=flat-square)](https://npmjs.org/package/react-native-emoji-modal-no-vector "View this project on npm")
+[![npm licence](http://img.shields.io/npm/l/react-native-emoji-modal-no-vector.svg?style=flat-square)](https://npmjs.org/package/react-native-emoji-modal-no-vector "View this project on npm")
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android-989898.svg?style=flat-square)](https://npmjs.org/package/react-native-emoji-modal-no-vector "View this project on npm")
 
 > Feature-complete emoji picker for React Native that mimics the look and feel of native ones.
 
-This is a rewrite of [react-native-emoji-picker](https://github.com/staltz/react-native-emoji-picker-staltz).
+[react-native-emoji-modal](https://github.com/staltz/react-native-emoji-modal) is a rewrite of [react-native-emoji-picker](https://github.com/staltz/react-native-emoji-picker-staltz).
+
+`react-native-emoji-modal-no-vector` replace `react-native-vector-icons` with easier installing `react-native-svg` base on [react-native-emoji-modal](https://github.com/staltz/react-native-emoji-modal).
 
 ![screenshot](./screenshot.png)
 
@@ -14,7 +21,6 @@ This is a rewrite of [react-native-emoji-picker](https://github.com/staltz/react
 - Supports iOS
 - Supports Android
   - It's aware of Android versions and their availability of emojis
-- Supports react-native-web
   - Except for category shortcuts (PRs welcome to fix this!)
 - Written in TypeScript
 - Lightweight
@@ -23,19 +29,13 @@ This is a rewrite of [react-native-emoji-picker](https://github.com/staltz/react
 ## Installation
 
 ```bash
-pnpm add react-native-emoji-modal
-```
-
-or
-
-```bash
-npm install --save react-native-emoji-modal
+npm install --save react-native-emoji-modal-no-vector
 ```
 
 ## Usage
 
 ```jsx
-import EmojiModal from 'react-native-emoji-modal';
+import EmojiModal from 'react-native-emoji-modal-no-vector';
 
 // ...
 
