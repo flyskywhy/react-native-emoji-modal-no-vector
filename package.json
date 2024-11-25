@@ -1,7 +1,7 @@
 {
   "name": "react-native-emoji-modal-no-vector",
-  "version": "0.2.4",
-  "description": "Emoji picker for React Native",
+  "version": "1.0.0",
+  "description": "Emoji picker for React Native, without react-native-vector-icons",
   "author": "Andre 'Staltz' Medeiros <contact@staltz.com>",
   "license": "MIT",
   "main": "index.ts",
