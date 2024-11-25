@@ -28,7 +28,6 @@
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "prepublishOnly": "npm run compile",
-    "compile": "node scripts/fetch"
+    "freshEmojiJson": "node scripts/fetch"
   }
 }
