@@ -60,6 +60,7 @@ import EmojiModal from 'react-native-emoji-modal';
 | `containerStyle`      | Custom style for the "box" in the center                              | ViewStyle     | false    |                                                                                                                                              |
 | `backgroundStyle`     | Custom style for the background of the modal                          | ViewStyle     | false    |                                                                                                                                              |
 | `modalStyle`          | Custom style for top-level container                                  | ViewStyle     | false    |                                                                                                                                              |
+| `blockfuncEmojis`     | Function to block emojis, e.g. `emoji => {return /1F...-1F.../.test(emoji.unified);}` | function      | false    |                                                                                                                                              |
 
 ## Support us!
 

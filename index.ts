@@ -377,6 +377,7 @@ export default class EmojiModal extends PureComponent<
     searchStyle?: ViewStyle;
     shortcutColor?: any;
     activeShortcutColor?: any;
+    blockfuncEmojis?: () => void;
   },
   {
     searchResults: Array<string>;
@@ -404,7 +405,13 @@ export default class EmojiModal extends PureComponent<
     const blocklistedEmojis = ['white_frowning_face', 'keycap_star', 'eject'];
 
     this.filteredEmojis = emojiDB.filter((emoji: Emoji) => {
-      if (blocklistedEmojis.includes(emoji.short_name)) return false;
+      if (
+        this.props.blockfuncEmojis?.(emoji) ||
+        blocklistedEmojis.includes(emoji.short_name)
+      ) {
+        return false;
+      }
+
       if (Platform.OS === 'android') {
         const addedIn = parseFloat(emoji.added_in);
         if (Number.isNaN(addedIn)) return true;
